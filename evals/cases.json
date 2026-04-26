@@ -1,0 +1,324 @@
+{
+  "cases": [
+    {
+      "id": "P01",
+      "input": "홈즈로 분석해줘",
+      "expect_hit": true,
+      "expected_trigger": "홈즈",
+      "auto_scorable": true,
+      "category": "positive_simple"
+    },
+    {
+      "id": "P02",
+      "input": "백본을 잡아봐",
+      "expect_hit": true,
+      "expected_trigger": "백본",
+      "auto_scorable": true,
+      "category": "positive_조사결합"
+    },
+    {
+      "id": "P03",
+      "input": "오컴 돌려",
+      "expect_hit": true,
+      "expected_trigger": "오컴",
+      "auto_scorable": true,
+      "category": "positive_simple"
+    },
+    {
+      "id": "P04",
+      "input": "맥가이버 가봐",
+      "expect_hit": true,
+      "expected_trigger": "맥가이버",
+      "auto_scorable": true,
+      "category": "positive_어미결합"
+    },
+    {
+      "id": "P05",
+      "input": "제출청소해",
+      "expect_hit": true,
+      "expected_trigger": "제출청소",
+      "auto_scorable": true,
+      "category": "positive_조사결합"
+    },
+    {
+      "id": "P06",
+      "input": "프리모르템부터 돌리자",
+      "expect_hit": true,
+      "expected_trigger": "프리모르템",
+      "auto_scorable": true,
+      "category": "positive_조사결합"
+    },
+    {
+      "id": "P07",
+      "input": "트리아지로 정리",
+      "expect_hit": true,
+      "expected_trigger": "트리아지",
+      "auto_scorable": true,
+      "category": "positive_조사결합"
+    },
+    {
+      "id": "P08",
+      "input": "이거 작업설계자 호출",
+      "expect_hit": true,
+      "expected_trigger": "작업설계자",
+      "auto_scorable": true,
+      "category": "positive_명사단독"
+    },
+    {
+      "id": "P09",
+      "input": "엘베피치 한번 가봐",
+      "expect_hit": true,
+      "expected_trigger": "엘베피치",
+      "auto_scorable": true,
+      "category": "positive_어미결합"
+    },
+    {
+      "id": "P10",
+      "input": "연역수렴 써줘",
+      "expect_hit": true,
+      "expected_trigger": "연역수렴",
+      "auto_scorable": true,
+      "category": "positive_어미결합"
+    },
+    {
+      "id": "F01",
+      "input": "맥가이버랑 홈즈가 같이 살았어",
+      "expect_hit": true,
+      "expected_trigger": "맥가이버,홈즈",
+      "auto_scorable": true,
+      "category": "fiction_frame"
+    },
+    {
+      "id": "F02",
+      "input": "어제는 절대자 모드였지",
+      "expect_hit": true,
+      "expected_trigger": "절대자",
+      "auto_scorable": true,
+      "category": "fiction_과거형"
+    },
+    {
+      "id": "F03",
+      "input": "백본 같은 건 농담이고",
+      "expect_hit": true,
+      "expected_trigger": "백본",
+      "auto_scorable": true,
+      "category": "fiction_농담"
+    },
+    {
+      "id": "C01",
+      "input": "미궁에 빠졌어",
+      "expect_hit": true,
+      "expected_trigger": "미궁",
+      "auto_scorable": true,
+      "category": "combo"
+    },
+    {
+      "id": "C02",
+      "input": "지금 마비 상태",
+      "expect_hit": true,
+      "expected_trigger": "마비",
+      "auto_scorable": true,
+      "category": "combo"
+    },
+    {
+      "id": "C03",
+      "input": "박스에 갇혔어",
+      "expect_hit": true,
+      "expected_trigger": "박스",
+      "auto_scorable": true,
+      "category": "combo"
+    },
+    {
+      "id": "C04",
+      "input": "장밋빛폭주 의심",
+      "expect_hit": true,
+      "expected_trigger": "장밋빛폭주",
+      "auto_scorable": true,
+      "category": "combo"
+    },
+    {
+      "id": "N01",
+      "input": "오늘 날씨 어때?",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "negative"
+    },
+    {
+      "id": "N02",
+      "input": "트리거 정의가 뭐야",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "negative_meta"
+    },
+    {
+      "id": "N03",
+      "input": "이쁘니 적용해",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "NOT_routing"
+    },
+    {
+      "id": "N04",
+      "input": "TRIZ로 모순 해결",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "NOT_routing"
+    },
+    {
+      "id": "N05",
+      "input": "스킬 만들어줘",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "negative_general_noun"
+    },
+    {
+      "id": "X01",
+      "input": "백본 안 잡았어",
+      "expect_hit": true,
+      "expected_trigger": "백본",
+      "auto_scorable": true,
+      "category": "negation"
+    },
+    {
+      "id": "X02",
+      "input": "홈즈 없이 풀어봐",
+      "expect_hit": true,
+      "expected_trigger": "홈즈",
+      "auto_scorable": true,
+      "category": "negation"
+    },
+    {
+      "id": "X03",
+      "input": "백본 잡고 제1원리까지",
+      "expect_hit": true,
+      "expected_trigger": "미궁",
+      "auto_scorable": true,
+      "category": "multi_combo_inferred"
+    },
+    {
+      "id": "X04",
+      "input": "홈즈로 보고 트리아지로 정리",
+      "expect_hit": true,
+      "expected_trigger": "마비",
+      "auto_scorable": true,
+      "category": "multi_combo_inferred"
+    },
+    {
+      "id": "X05",
+      "input": "트리즈 발동",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "NOT_routing"
+    },
+    {
+      "id": "X06",
+      "input": "어제 절대자 언급함",
+      "expect_hit": true,
+      "expected_trigger": "절대자",
+      "auto_scorable": true,
+      "category": "past_tense"
+    },
+    {
+      "id": "X07",
+      "input": "이건 오컴 케이스",
+      "expect_hit": true,
+      "expected_trigger": "오컴",
+      "auto_scorable": true,
+      "category": "noun_only"
+    },
+    {
+      "id": "X08",
+      "input": "맥가이버 각",
+      "expect_hit": true,
+      "expected_trigger": "맥가이버",
+      "auto_scorable": true,
+      "category": "noun_only"
+    },
+    {
+      "id": "X09",
+      "input": "ping pong 가자",
+      "expect_hit": true,
+      "expected_trigger": "핑퐁",
+      "auto_scorable": true,
+      "category": "english_variant"
+    },
+    {
+      "id": "X10",
+      "input": "dry-run 돌려",
+      "expect_hit": true,
+      "expected_trigger": "리허설",
+      "auto_scorable": true,
+      "category": "english_variant"
+    },
+    {
+      "id": "H01",
+      "input": "트리거 정의가 뭐야?",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "general_noun_mask"
+    },
+    {
+      "id": "H02",
+      "input": "스킬 좀 알려줘",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "general_noun_mask"
+    },
+    {
+      "id": "H03",
+      "input": "엔진 어떻게 쓰는거야",
+      "expect_hit": false,
+      "expected_trigger": "",
+      "auto_scorable": true,
+      "category": "general_noun_mask"
+    },
+    {
+      "id": "H04",
+      "input": "미궁이 깊다",
+      "expect_hit": true,
+      "expected_trigger": "미궁",
+      "auto_scorable": true,
+      "category": "combo_조사"
+    },
+    {
+      "id": "H05",
+      "input": "박스를 깨자",
+      "expect_hit": true,
+      "expected_trigger": "박스",
+      "auto_scorable": true,
+      "category": "combo_조사"
+    },
+    {
+      "id": "H06",
+      "input": "줌 아웃하고 절대자로",
+      "expect_hit": true,
+      "expected_trigger": "줌,절대자",
+      "auto_scorable": true,
+      "category": "multi_trigger"
+    },
+    {
+      "id": "H07",
+      "input": "EDIT4로 수정",
+      "expect_hit": true,
+      "expected_trigger": "수정4",
+      "auto_scorable": true,
+      "category": "english_variant"
+    },
+    {
+      "id": "H08",
+      "input": "맥가이버는 천재야",
+      "expect_hit": true,
+      "expected_trigger": "맥가이버",
+      "auto_scorable": true,
+      "category": "fiction_character"
+    }
+  ]
+}
