@@ -1,18 +1,21 @@
 ---
 name: trigger-skill
-description: 트리거 라우터 + glossary lazy-load 엔진 v2.2 Flash-Router. UP §도구우선게이트(Flash)에서 메시지 grep 후 hit ≥ 1 시 호출됨. args=트리거명 → references/glossary/{name}.md 단일 Read (~50토큰). 콤보 args → 구성 트리거 다발 Read. 32 정식명 + 10 콤보 verbatim. 핑퐁·리허설·작업계획 컨펌게이트 우선권. P1: 트리거발동, 트리거사전, 트리거스킬, trigger skill, hard-fire, 강제발동, 정식명사전, 글로서리게이트, 발동게이트, hit판정, 32정식명, 10콤보, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 수정4, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 제출청소, 작업설계자, 핑퐁, 리허설, 작업계획, 복기, 이해당사자맵, 신뢰구간, 미궁, 마비, 시야, 벽, 카드없음, 장밋빛폭주, 제출직전, 복잡계, 박스, 복기방. P2: 발동해줘, 트리거 잡아, fire trigger, lookup definition, 정의 가져와. P3: trigger detection, deterministic invocation, hard-fire gate, glossary verbatim, args router, lazy load, flash router. P4: UP §도구우선게이트 grep hit ≥ 1 시. P5: 헤더 silent, 정의 verbatim 인용, 1줄 자연 융합. NOT: TRIZ·트리즈→triz / 이쁘니→design-skill.
+description: v2.3 Active-Fire. 다음 트리거 단어가 메시지에 **하나라도 등장 시 즉시 발동**=`references/glossary/{name}.md` Read 1회→verbatim 인용→1줄 자연 융합. 미발동=TOP-LEVEL FAIL. **정식명 32**: 홈즈·오컴·제1원리·베이지안·엄브렐러·아날로지·연역수렴·외과적·백본·스켈레톤·SHE·엘베피치·타임스톤·맥가이버·넛지·프리모르템·트리아지·줌·절대자·틀밖·부작업·주작업·수정4·복기·이해당사자맵·신뢰구간·제출청소·작업설계자·핑퐁·리허설·작업계획. **콤보 10** (콤보-{name}.md+구성 다발 Read·순서=관점→분석→구조→판단→실행): 미궁·마비·시야·벽·카드없음·장밋빛폭주·제출직전·복잡계·박스·복기방. 핑퐁·리허설·작업계획 hit=본실행 전 컨펌게이트 5단계 필수. P1: 트리거발동, 트리거사전, 트리거스킬, trigger skill, hard-fire, 강제발동, 글로서리게이트, hit판정, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 수정4, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 제출청소, 작업설계자, 핑퐁, 리허설, 작업계획, 복기, 이해당사자맵, 신뢰구간, 미궁, 마비, 시야, 벽, 카드없음, 장밋빛폭주, 제출직전, 복잡계, 박스, 복기방. P2: 발동해줘, 트리거 잡아, 트리거로 봐, 정의 가져와, fire trigger, apply trigger. P3: deterministic invocation, hard-fire gate, active fire, mandatory invocation. P4: 32정식명·10콤보 등장 즉시 자동 발동. P5: silent, verbatim, 1줄 융합. NOT: TRIZ→triz / 이쁘니→design-skill / 일반명사 "트리거" 단독→마스킹.
 license: Proprietary
 ---
 
-# 트리거 스킬 v2.2 Flash-Router — Lazy Glossary
+# 트리거 스킬 v2.3 Active-Fire — Lazy Glossary
 
-> **목표 = 발동 100% + verbatim · 호출당 ~80토큰.** UP §도구우선게이트(Flash)가 메시지 grep으로 hit 판정·invoke 강제. 본 스킬은 args 라우터 — args의 트리거명에 해당하는 단일 glossary 파일만 lazy-load.
+> **목표 = 발동 100% + verbatim · 호출당 ~80토큰.** description 능동 명령형으로 Claude 자율발동 + UP §도구우선게이트(Flash) grep 이중 안전망. 본 스킬은 args 라우터 — args의 트리거명에 해당하는 단일 glossary 파일만 lazy-load.
 
-> **핵심 키워드:** 트리거발동·트리거사전·트리거스킬·hard-fire·정식명사전·글로서리게이트·발동게이트·hit판정 — 메시지 등장 시 UP grep이 본 스킬 호출.
+> **핵심 키워드:** 트리거발동·트리거사전·트리거스킬·hard-fire·정식명사전·글로서리게이트·발동게이트·hit판정 — 메시지 등장 시 무조건 자동 발동.
 
 ---
 
-## §A. INVARIANT (3개)
+## §A. INVARIANT (4개)
+
+### Rule 0 — Active-Fire (능동 발동 의무)
+description의 32정식명·10콤보 트리거 단어가 메시지에 **하나라도** 등장하면 Claude는 **즉시 자동 발동**한다. UP 게이트 호출을 기다리지 않는다. args 누락 시 메시지에서 트리거명 자체추출 → `references/glossary/{name}.md` Read. **미발동 = TOP-LEVEL FAIL** → 응답 폐기·재시작.
 
 ### Rule 1 — Silent
 헤더·박스·자기선언 출력 ✗. 본문 1줄 자연 융합.
@@ -62,14 +65,15 @@ args 누락 OR 사전에 없는 토큰 → `references/triggers-glossary.md` 마
 
 ---
 
-## §C. 자체점검 (송출 직전 2항)
+## §C. 자체점검 (송출 직전 3항)
 
 | # | 체크 | 위반 |
 |---|------|------|
+| 0 | 메시지에 32정식명·10콤보 단어 hit인데 glossary Read 0회? | YES → 응답 폐기·Read 후 재작성 |
 | 1 | 컨펌게이트(핑퐁·리허설·작업계획) hit인데 본실행 시작? | YES → 응답 폐기·5단계로 복귀 |
 | 2 | 로드된 glossary 정의 키워드 ≥ 2개 verbatim 인용? | NO → 보강 |
 
-UP §도구우선게이트가 0차 방어(grep·invoke), §C는 1차 방어(컨펌·verbatim).
+Claude 자율발동(Rule 0)이 0차 방어, UP §도구우선게이트가 0.5차(이중 안전망), §C는 1차 방어(자체점검).
 
 ---
 
@@ -95,14 +99,20 @@ UP §도구우선게이트가 0차 방어(grep·invoke), §C는 1차 방어(컨�
 
 | 함정 | 대응 |
 |------|------|
-| **UP grep 누락** | UP §도구우선게이트 CHECK가 응답 폐기. 본 스킬은 grep 후 호출됨 |
+| **UP grep 누락 / Claude 자율발동 실패** | Rule 0 Active-Fire — description 32+10 단어 등장 시 즉시 발동. UP 게이트는 이중 안전망일 뿐 |
 | **호출됐는데 silent 위반** | Rule 1 = 헤더·박스 출력 ✗. 본문 1줄 자연 융합 |
 | **정의 일반추론 (글로서리 우회)** | Rule 2 = 로드된 파일 verbatim. 키워드 ≥ 2개 인용 |
 | **컨펌게이트 hit인데 INIT 직행** | Rule 3 = 핑퐁·리허설·작업계획 5단계 먼저 |
-| **args 미전달 환경** | §B-3 폴백 = 마스터 풀로드. changelog 기록 |
+| **args 미전달 환경** | 메시지에서 트리거명 자체추출 → 단일 Read. 폴백은 §B-3 (마스터 풀로드) |
 | **콤보 단일 Read 실수** | 콤보는 Read N+1회 (콤보 파일 + 구성 트리거 N개). 단일 Read = FAIL |
 | **NOT 라우팅 무시** | TRIZ·이쁘니는 라우팅. 본 스킬 §B 적용 ✗ |
 | **glossary 파일 누락·오타** | Read 실패 → §B-3 폴백. 누락은 SKILL 수정 사유 |
+
+**❌WRONG / ✅CORRECT — 능동 발동 vs 수동 대기**
+
+❌ WRONG: 형이 "홈즈로 봐줘"라고 적었는데 Claude가 "UP 게이트가 호출 안 했네"라며 자율판단으로 일반추론 응답. 트리거 정의 Read 0회.
+
+✅ CORRECT: "홈즈" 단어 hit 즉시 `references/glossary/홈즈.md` Read 1회 → 정의 verbatim 키워드 2개 이상 인용 → 본문 1줄 자연 융합. UP 게이트 호출 여부 무관.
 
 ---
 
@@ -111,6 +121,7 @@ UP §도구우선게이트가 0차 방어(grep·invoke), §C는 1차 방어(컨�
 - v1.0 — 강제발동 + glossary Read (references 풀로드)
 - v2.0 Flash — UP grep + inline glossary 박제 (~1700토큰/호출, Read 0회)
 - v2.1 Flash-Router (2026-04-28) — args 라우팅으로 lazy-load 복귀. 호출당 ~250토큰 (v2.0 대비 -85%)
-- **v2.2 Vector-Sharp (2026-05-01)** — 28+9 → 32+10. 수정 6 (오컴·트리아지·아날로지·넛지·줌·엘베피치·베이지안·백본 발동조건+산출물 강제 박제) · 강화 5 (홈즈복기모드·틀밖종료문·수정4 L정의·작업설계자결재포인트·트리아지분배비율) · 신설 4 (복기·이해당사자맵·신뢰구간·콤보-복기방). 사각 메우기 + UP DNA·paper-engine 중복 해소.
+- v2.2 Vector-Sharp (2026-05-01) — 28+9 → 32+10. 수정 6·강화 5·신설 4. 사각 메우기 + UP DNA·paper-engine 중복 해소.
+- **v2.3 Active-Fire (2026-05-03)** — description 수동태("호출됨") → 능동 명령형("반드시 즉시 발동") 전환. Rule 0 Active-Fire 신설 = Claude 자율발동 의무화. UP 게이트는 이중 안전망으로 격하. P2·P3 어휘 확장(트리거 발동·트리거로 봐·apply trigger 등). ❌WRONG/✅CORRECT 1쌍 박제. **변이 동기:** 형 피드백 — "발동이 너무 안돼. 대놓고 적어도 발동적용이 안돼." → 진단 결과 description이 수동 서술형이라 Claude가 자율판단으로 우회. 능동 명령형 전환으로 발동률 회복.
 
 **v2.2 변이 동기:** 형 피드백 — "트리거 정의가 일반 단어 수준이면 트리거가 필요 없어. 벡터가 뚜렷해야 함." → 6수정·5강화·4신설로 발동조건·산출물 강제, 사각(복기·이해충돌·신뢰구간) 메움.
