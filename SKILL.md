@@ -1,6 +1,6 @@
 ---
 name: trigger-skill
-description: v2.3 Active-Fire. 다음 트리거 단어가 메시지에 **하나라도 등장 시 즉시 발동**=`references/glossary/{name}.md` Read 1회→verbatim 인용→1줄 자연 융합. 미발동=TOP-LEVEL FAIL. **정식명 32**: 홈즈·오컴·제1원리·베이지안·엄브렐러·아날로지·연역수렴·외과적·백본·스켈레톤·SHE·엘베피치·타임스톤·맥가이버·넛지·프리모르템·트리아지·줌·절대자·틀밖·부작업·주작업·수정4·복기·이해당사자맵·신뢰구간·제출청소·작업설계자·핑퐁·리허설·작업계획. **콤보 10** (콤보-{name}.md+구성 다발 Read·순서=관점→분석→구조→판단→실행): 미궁·마비·시야·벽·카드없음·장밋빛폭주·제출직전·복잡계·박스·복기방. 핑퐁·리허설·작업계획 hit=본실행 전 컨펌게이트 5단계 필수. P1: 트리거발동, 트리거사전, 트리거스킬, trigger skill, hard-fire, 강제발동, 글로서리게이트, hit판정, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 수정4, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 제출청소, 작업설계자, 핑퐁, 리허설, 작업계획, 복기, 이해당사자맵, 신뢰구간, 미궁, 마비, 시야, 벽, 카드없음, 장밋빛폭주, 제출직전, 복잡계, 박스, 복기방. P2: 발동해줘, 트리거 잡아, 트리거로 봐, 정의 가져와, fire trigger, apply trigger. P3: deterministic invocation, hard-fire gate, active fire, mandatory invocation. P4: 32정식명·10콤보 등장 즉시 자동 발동. P5: silent, verbatim, 1줄 융합. NOT: TRIZ→triz / 이쁘니→design-skill / 일반명사 "트리거" 단독→마스킹.
+description: v2.3 Active-Fire. 다음 트리거 단어가 메시지에 **하나라도 등장 시 즉시 발동**=`references/glossary/{name}.md` Read 1회→verbatim 인용→1줄 자연 융합. 미발동=TOP-LEVEL FAIL. **정식명 32**: 홈즈·오컴·제1원리·베이지안·엄브렐러·아날로지·연역수렴·외과적·백본·스켈레톤·SHE·엘베피치·타임스톤·맥가이버·넛지·프리모르템·트리아지·줌·절대자·틀밖·부작업·주작업·수정4·복기·이해당사자맵·신뢰구간·제출청소·작업설계자·핑퐁·리허설·작업계획. **콤보 10** (콤보-{name}.md+구성 다발 Read·순서=관점→분석→구조→판단→실행): 미궁·마비·시야·벽·카드없음·장밋빛폭주·제출직전·복잡계·박스·복기방. 핑퐁·리허설·작업계획 hit=본실행 전 컨펌게이트 5단계 필수. P1: 트리거발동, 트리거사전, 트리거스킬, trigger skill, hard-fire, 강제발동, 글로서리게이트, hit판정, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 수정4, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 제출청소, 작업설계자, 핑퐁, 리허설, 작업계획, 복기, 이해당사자맵, 신뢰구간, 미궁, 마비, 시야, 벽, 카드없음, 장밋빛폭주, 제출직전, 복잡계, 박스, 복기방. P2: 발동해줘, 트리거 잡아, 트리거로 봐, 정의 가져와, fire trigger, apply trigger. P3: deterministic invocation, hard-fire gate, active fire, mandatory invocation. P4: 32정식명·10콤보 등장 즉시 자동 발동. P5: silent, verbatim, 1줄 융합. NOT: TRIZ→triz-skill / 이쁘니→design-skill / 일반명사 "트리거" 단독→마스킹.
 license: Proprietary
 ---
 
@@ -59,7 +59,7 @@ args가 콤보명이면 `references/glossary/콤보-{args}.md` Read → 구성 �
 args 누락 OR 사전에 없는 토큰 → `references/triggers-glossary.md` 마스터 Read (구버전 풀로드). 폴백 사용 시 changelog 1줄 기록.
 
 ### B-4. NOT 라우팅
-- TRIZ / triz / 트리즈 → triz 스킬 (본 스킬 §B 적용 ✗)
+- TRIZ / triz-skill / 트리즈 → triz-skill 스킬 (본 스킬 §B 적용 ✗)
 - 이쁘니 → design-skill
 - "트리거"·"스킬"·"엔진" 단독 → 일반명사 마스킹
 
@@ -121,7 +121,7 @@ Claude 자율발동(Rule 0)이 0차 방어, UP §도구우선게이트가 0.5차
 - v1.0 — 강제발동 + glossary Read (references 풀로드)
 - v2.0 Flash — UP grep + inline glossary 박제 (~1700토큰/호출, Read 0회)
 - v2.1 Flash-Router (2026-04-28) — args 라우팅으로 lazy-load 복귀. 호출당 ~250토큰 (v2.0 대비 -85%)
-- v2.2 Vector-Sharp (2026-05-01) — 28+9 → 32+10. 수정 6·강화 5·신설 4. 사각 메우기 + UP DNA·paper-engine 중복 해소.
+- v2.2 Vector-Sharp (2026-05-01) — 28+9 → 32+10. 수정 6·강화 5·신설 4. 사각 메우기 + UP DNA·shaper-skill 중복 해소.
 - **v2.3 Active-Fire (2026-05-03)** — description 수동태("호출됨") → 능동 명령형("반드시 즉시 발동") 전환. Rule 0 Active-Fire 신설 = Claude 자율발동 의무화. UP 게이트는 이중 안전망으로 격하. P2·P3 어휘 확장(트리거 발동·트리거로 봐·apply trigger 등). ❌WRONG/✅CORRECT 1쌍 박제. **변이 동기:** 형 피드백 — "발동이 너무 안돼. 대놓고 적어도 발동적용이 안돼." → 진단 결과 description이 수동 서술형이라 Claude가 자율판단으로 우회. 능동 명령형 전환으로 발동률 회복.
 
 **v2.2 변이 동기:** 형 피드백 — "트리거 정의가 일반 단어 수준이면 트리거가 필요 없어. 벡터가 뚜렷해야 함." → 6수정·5강화·4신설로 발동조건·산출물 강제, 사각(복기·이해충돌·신뢰구간) 메움.
