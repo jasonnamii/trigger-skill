@@ -82,9 +82,11 @@ Claude 자율발동(Rule 0)이 0차 방어, UP §도구우선게이트가 0.5차
 - `references/glossary/{name}.md` — 32정식명 단위 정의 (라우터 타깃)
 - `references/glossary/콤보-{name}.md` — 10콤보 구성 (라우터 타깃)
 - `references/triggers-glossary.md` — 마스터 (B-3 폴백·백업)
-- `references/protocol-cleanup.md` — 제출청소 13축 풀버전
+- `references/protocol-cleanup.md` — 제출청소 **14축** 풀버전 (v2.0 — 축14 AI아님 종합 신설)
+- `references/ai-not-canon.md` — **축14 AI아님 단일 정본** (UP·shaper·trigger-skill 모두 참조·7서브슬롯 패턴 박제)
 - `references/protocol-designer.md` — 작업설계자 7단계 풀버전
 - `references/protocol-edit4.md` — 수정4 L0~L4 풀버전
+- `scripts/cleanup_scanner.py` — 제출청소 14축 일괄 스캔 (축14 7서브슬롯 분리 출력)
 
 ---
 
@@ -123,5 +125,7 @@ Claude 자율발동(Rule 0)이 0차 방어, UP §도구우선게이트가 0.5차
 - v2.1 Flash-Router (2026-04-28) — args 라우팅으로 lazy-load 복귀. 호출당 ~250토큰 (v2.0 대비 -85%)
 - v2.2 Vector-Sharp (2026-05-01) — 28+9 → 32+10. 수정 6·강화 5·신설 4. 사각 메우기 + UP DNA·shaper-skill 중복 해소.
 - **v2.3 Active-Fire (2026-05-03)** — description 수동태("호출됨") → 능동 명령형("반드시 즉시 발동") 전환. Rule 0 Active-Fire 신설 = Claude 자율발동 의무화. UP 게이트는 이중 안전망으로 격하. P2·P3 어휘 확장(트리거 발동·트리거로 봐·apply trigger 등). ❌WRONG/✅CORRECT 1쌍 박제. **변이 동기:** 형 피드백 — "발동이 너무 안돼. 대놓고 적어도 발동적용이 안돼." → 진단 결과 description이 수동 서술형이라 Claude가 자율판단으로 우회. 능동 명령형 전환으로 발동률 회복.
+
+- **v2.4 Cleanup-AI-Not (2026-05-04)** — 제출청소 13축 → 14축 확장. 축4 분리(모델명·생성흔적만) + 축14 신설(AI아님 종합·7서브슬롯: 미사여구·한자투·자신없는어미·것남용·강조부사·AI메타·AI사족). 정본 단일화: `references/ai-not-canon.md` 신규 — UP §L2·shaper-skill·trigger-skill 모두 본 정본 참조 (1뎁스 위임). `scripts/cleanup_scanner.py` 신규 (Python 스캐너·LLM 판단 0%·토큰 절감). **변이 동기:** 형 피드백 — "제출 청소를 확장하고 싶어. AI가 아닌 작업. 아주아주아주 철저하게 AI 아닌 문서." → 정본 흩어짐(UP·shaper·제출청소 각자) → 단일 정본 신규 + Python 스캐너로 결정주의 박멸.
 
 **v2.2 변이 동기:** 형 피드백 — "트리거 정의가 일반 단어 수준이면 트리거가 필요 없어. 벡터가 뚜렷해야 함." → 6수정·5강화·4신설로 발동조건·산출물 강제, 사각(복기·이해충돌·신뢰구간) 메움.
