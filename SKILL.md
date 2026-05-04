@@ -1,6 +1,6 @@
 ---
 name: trigger-skill
-description: v2.3 Active-Fire. 다음 트리거 단어가 메시지에 **하나라도 등장 시 즉시 발동**=`references/glossary/{name}.md` Read 1회→verbatim 인용→1줄 자연 융합. 미발동=TOP-LEVEL FAIL. **정식명 31**: 홈즈·오컴·제1원리·베이지안·엄브렐러·아날로지·연역수렴·외과적·백본·스켈레톤·SHE·엘베피치·타임스톤·맥가이버·넛지·프리모르템·트리아지·줌·절대자·틀밖·부작업·주작업·수정4·복기·이해당사자맵·신뢰구간·작업설계자·핑퐁·리허설·작업계획. **콤보 10** (콤보-{name}.md+구성 다발 Read·순서=관점→분석→구조→판단→실행): 미궁·마비·시야·벽·카드없음·장밋빛폭주·제출직전·복잡계·박스·복기방. 핑퐁·리허설·작업계획 hit=본실행 전 컨펌게이트 5단계 필수. P1: 트리거발동, 트리거사전, 트리거스킬, trigger skill, hard-fire, 강제발동, 글로서리게이트, hit판정, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 수정4, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 작업설계자, 핑퐁, 리허설, 작업계획, 복기, 이해당사자맵, 신뢰구간, 미궁, 마비, 시야, 벽, 카드없음, 장밋빛폭주, 제출직전, 복잡계, 박스, 복기방. P2: 발동해줘, 트리거 잡아, 트리거로 봐, 정의 가져와, fire trigger, apply trigger. P3: deterministic invocation, hard-fire gate, active fire, mandatory invocation. P4: 31정식명·10콤보 등장 즉시 자동 발동. P5: silent, verbatim, 1줄 융합. NOT: TRIZ→triz-skill / 이쁘니→design-skill / 제출청소·14축·AI박멸·휴머나이즈·외부송출·submission cleanup→submission-cleanup 스킬 / 일반명사 "트리거" 단독→마스킹.
+description: v2.6 Active-Fire. 다음 트리거 단어가 메시지에 **하나라도 등장 시 즉시 발동**=`references/glossary/{name}.md` Read 1회→verbatim 인용→1줄 자연 융합. 미발동=TOP-LEVEL FAIL. **정식명 31**: 홈즈·오컴·제1원리·베이지안·엄브렐러·아날로지·연역수렴·외과적·백본·스켈레톤·SHE·엘베피치·타임스톤·맥가이버·넛지·프리모르템·트리아지·줌·절대자·틀밖·부작업·주작업·수정4·복기·이해당사자맵·신뢰구간·작업설계자·핑퐁·리허설·작업계획. **콤보 9** (콤보-{name}.md+구성 다발 Read·순서=관점→분석→구조→판단→실행): 미궁·마비·시야·벽·카드없음·장밋빛폭주·복잡계·박스·복기방. 핑퐁·리허설·작업계획 hit=본실행 전 컨펌게이트 5단계 필수. P1: 트리거발동, 트리거사전, 트리거스킬, trigger skill, hard-fire, 강제발동, 글로서리게이트, hit판정, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 수정4, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 작업설계자, 핑퐁, 리허설, 작업계획, 복기, 이해당사자맵, 신뢰구간, 미궁, 마비, 시야, 벽, 카드없음, 장밋빛폭주, 복잡계, 박스, 복기방. P2: 발동해줘, 트리거 잡아, 트리거로 봐, 정의 가져와, fire trigger, apply trigger. P3: deterministic invocation, hard-fire gate, active fire, mandatory invocation. P4: 31정식명·9콤보 등장 즉시 자동 발동. P5: silent, verbatim, 1줄 융합. NOT: TRIZ→triz-skill / 이쁘니→design-skill / 일반명사 "트리거" 단독→마스킹.
 license: Proprietary
 ---
 
@@ -49,7 +49,7 @@ args가 다음 중 하나면 `references/glossary/{args}.md` Read 1회:
 args가 콤보명이면 `references/glossary/콤보-{args}.md` Read → 구성 트리거 추출 → 각 구성 트리거 `references/glossary/{name}.md` 다발 Read:
 
 ```
-미궁 · 마비 · 시야 · 벽 · 카드없음 · 장밋빛폭주 · 제출직전 · 복잡계 · 박스 · 복기방
+미궁 · 마비 · 시야 · 벽 · 카드없음 · 장밋빛폭주 · 복잡계 · 박스 · 복기방
 ```
 
 콤보 복합 순서: 관점 → 분석 → 구조 → 판단 → 실행
@@ -61,7 +61,6 @@ args 누락 OR 사전에 없는 토큰 → `references/triggers-glossary.md` 마
 ### B-4. NOT 라우팅
 - TRIZ / triz-skill / 트리즈 → triz-skill 스킬 (본 스킬 §B 적용 ✗)
 - 이쁘니 → design-skill
-- 제출청소 / 14축 / AI박멸 / 휴머나이즈 / 외부송출 / submission cleanup → **submission-cleanup 스킬** (본 스킬 §B 적용 ✗·자산 이전 완료)
 - "트리거"·"스킬"·"엔진" 단독 → 일반명사 마스킹
 
 ---
@@ -85,7 +84,6 @@ Claude 자율발동(Rule 0)이 0차 방어, UP §도구우선게이트가 0.5차
 - `references/triggers-glossary.md` — 마스터 (B-3 폴백·백업)
 - `references/protocol-designer.md` — 작업설계자 7단계 풀버전
 - `references/protocol-edit4.md` — 수정4 L0~L4 풀버전
-- (제출청소 자산은 **submission-cleanup 스킬**로 이전 — `submission-cleanup/references/ai-not-canon.md`·`protocol-cleanup.md`·`scripts/cleanup_scanner.py`)
 
 ---
 
@@ -124,6 +122,8 @@ Claude 자율발동(Rule 0)이 0차 방어, UP §도구우선게이트가 0.5차
 - v2.1 Flash-Router (2026-04-28) — args 라우팅으로 lazy-load 복귀. 호출당 ~250토큰 (v2.0 대비 -85%)
 - v2.2 Vector-Sharp (2026-05-01) — 28+9 → 32+10. 수정 6·강화 5·신설 4. 사각 메우기 + UP DNA·shaper-skill 중복 해소.
 - **v2.3 Active-Fire (2026-05-03)** — description 수동태("호출됨") → 능동 명령형("반드시 즉시 발동") 전환. Rule 0 Active-Fire 신설 = Claude 자율발동 의무화. UP 게이트는 이중 안전망으로 격하. P2·P3 어휘 확장(트리거 발동·트리거로 봐·apply trigger 등). ❌WRONG/✅CORRECT 1쌍 박제. **변이 동기:** 형 피드백 — "발동이 너무 안돼. 대놓고 적어도 발동적용이 안돼." → 진단 결과 description이 수동 서술형이라 Claude가 자율판단으로 우회. 능동 명령형 전환으로 발동률 회복.
+
+- **v2.6 Trigger-Purge-Submission (2026-05-04)** — 제출청소 라우팅 잔재 일체 제거. description NOT절에서 "제출청소·14축·AI박멸·휴머나이즈·외부송출·submission cleanup→submission-cleanup 스킬" 라인 삭제·§B-4 동일 라인 삭제·§D 자산 이전 메모 삭제. 콤보 10→9 (제출직전 콤보 제거·description·§B-2·P4 동기화). `glossary/제출청소.md`·`glossary/콤보-제출직전.md` 삭제. **변이 동기:** 형 피드백 — "트리거 스킬에 제출청소 관련 전부 삭제. 그냥 제출청소 스킬을 발동하면 돼. 굳이 왜 트리거 스킬을 발동해." → 책임 직교성 완성. submission-cleanup 자체 description의 P1·P2 트리거로 직접 발동. trigger-skill 경유 = 중복 호출 비용.
 
 - **v2.5 Diet-Submission-Out (2026-05-04)** — 제출청소 자산 일체 → **submission-cleanup 스킬로 분리·이전**. 정식명 32→31. P1·§B-1·§B-4·§D 모두 갱신. `references/ai-not-canon.md`·`protocol-cleanup.md`·`scripts/cleanup_scanner.py` 삭제. `glossary/제출청소.md`는 라우팅 마커 1줄로 압축. 콤보-제출직전 갱신 (스켈레톤→submission-cleanup 호출). NOT 라우팅에 "제출청소·14축·AI박멸·휴머나이즈·외부송출·submission cleanup→submission-cleanup 스킬" 추가. **변이 동기:** 형 피드백 — "트리거 스킬에서 삭제하고 제출청소 스킬을 따로 만드는거야. 독립적으로. 그러면 더 강력하게 만들 수 있잖아." → 책임 직교성(verbatim 1줄 vs 14축 절차) 진단 → 분리. trigger-skill은 "단어→정의 1줄 융합" 본질로 다이어트.
 
