@@ -1,36 +1,38 @@
 ---
 name: trigger-skill
-description: 트리거 스킬 v5.1 Tool-Call-Forced. v5.0 Inline-Full + Rule 4 신설. 정식명 30 verbatim 본문 풀로드·자연발화 35패턴 광범위·lazy Read 폐기·v1.0 발동률 99% 회귀. 매 메시지 §B·§C grep 1회 강제·hit≥1=즉시 Skill tool `anthropic-skills:trigger-skill` 명시 호출 + §B 정의 키워드 ≥2개 verbatim 1줄 자연 융합. command-message 풀로드 = 발동 ✗·Skill tool 호출이 발동 본체. 핑퐁·리허설·작업계획 hit=본실행 전 5단계 컨펌게이트. P1 트리거발동, 트리거사전, 트리거스킬, hard-fire, 강제발동, 정식명사전, 발동게이트, 30정식명, 인라인풀로드, 자연발화, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 수정4, 복기, 이해당사자맵, 신뢰구간, 작업설계자, 핑퐁, 리허설, 작업계획. P2 발동해줘, 봐줘, 적용해, 식으로, 답게, 처럼, 관점으로, 기반으로, 이라는, 라는, 라고, 뭐야, 뜻, 정의, 박제, 있어, 했어. P3 trigger detection, deterministic invocation, inline full-load, natural utterance, 99% activation. P4 매 메시지 진입 직후 grep 강제·자연발화 광범위 hit. P5 silent·verbatim 1줄 자연 융합·컨펌게이트 본실행 차단. NOT TRIZ→triz / 이쁘니→design-skill / 트리거 단독→일반명사 / 인명 컨텍스트→마스킹.
+description: 트리거 스킬 v5.2 Self-Verify-Hardened. v5.1 Tool-Call-Forced 강화 — Rule 1로 Tool Call 강제 승격·Pre-Output 1번 승격·본문 첫 줄 자가검열 명시. 정식명 30 verbatim 본문 풀로드·자연발화 35패턴 광범위·lazy Read 폐기·v1.0 발동률 99% 회귀. 매 메시지 §B·§C grep 1회 강제·hit≥1=즉시 Skill tool `anthropic-skills:trigger-skill` 명시 호출 + §B 정의 키워드 ≥2개 verbatim 1줄 자연 융합. command-message 풀로드 = 발동 ✗·Skill tool 호출이 발동 본체. 핑퐁·리허설·작업계획 hit=본실행 전 5단계 컨펌게이트. P1 트리거발동, 트리거사전, 트리거스킬, hard-fire, 강제발동, 정식명사전, 발동게이트, 30정식명, 인라인풀로드, 자연발화, 자가검열, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 수정4, 복기, 이해당사자맵, 신뢰구간, 작업설계자, 핑퐁, 리허설, 작업계획. P2 발동해줘, 봐줘, 적용해, 식으로, 답게, 처럼, 관점으로, 기반으로, 이라는, 라는, 라고, 뭐야, 뜻, 정의, 박제, 있어, 했어. P3 trigger detection, deterministic invocation, inline full-load, natural utterance, self-verify, 99% activation. P4 매 메시지 진입 직후 grep 강제·자연발화 광범위 hit. P5 silent·verbatim 1줄 자연 융합·컨펌게이트 본실행 차단. NOT TRIZ→triz / 이쁘니→design-skill / 트리거 단독→일반명사 / 인명 컨텍스트→마스킹.
 license: Proprietary
 ---
 
-# 트리거 스킬 v5.1 Tool-Call-Forced
+# 트리거 스킬 v5.2 Self-Verify-Hardened
+
+> **자가검열 첫 문장 (모든 응답 직전 의무 자문):** 본문이 컨텍스트에 풀로드된 상태 ≠ 발동. Skill tool `anthropic-skills:trigger-skill` 호출 흔적이 컨텍스트 박스에 가시적으로 남아야 발동 인정. 본문만 기억하고 호출 안 하면 = 위장 발동 = 응답 폐기 사유.
 
 > **목표 = 발동률 99% (v1.0 회귀) + verbatim.** 정식명 30 정의 본문 풀로드. 자연발화 35패턴 광범위 grep. lazy Read 폐기 — Cowork 환경에서 references/*.md 자동 로드 보장 ✗. SKILL.md description+본문이 유일한 결정론.
 
-> **핵심 키워드:** 트리거발동·트리거사전·트리거스킬·hard-fire·정식명사전·발동게이트·hit판정·인라인풀로드·자연발화 — 메시지 등장 시 매 진입 grep으로 자가발동.
+> **핵심 키워드:** 트리거발동·트리거사전·트리거스킬·hard-fire·정식명사전·발동게이트·hit판정·인라인풀로드·자연발화·자가검열 — 메시지 등장 시 매 진입 grep으로 자가발동.
 
 ---
 
 ## 🛑 LOCK 0 — 매 메시지 grep 강제
 
-매 user 메시지 진입 직후 = 본문 진입 *전* §B·§C 풀 grep 1회 무조건 실행. hit ≥1 = 즉시 §B 정의 verbatim 1줄 자연 융합. 미실행 = 응답 폐기·재진입. UP·외부 게이트 의존 ✗. 책임 = Claude 본인.
+매 user 메시지 진입 직후 = 본문 진입 *전* §B·§C 풀 grep 1회 무조건 실행. hit ≥1 = 즉시 Skill tool 호출 + §B 정의 verbatim 1줄 자연 융합. 미실행 = 응답 폐기·재진입. UP·외부 게이트 의존 ✗. 책임 = Claude 본인.
 
 ---
 
 ## §A. INVARIANT (4개)
 
-### Rule 1 — Silent
-헤더·박스·자기선언 출력 ✗. 본문 1줄 자연 융합. "트리거 발동 — ..." 같은 메타 선언 ✗.
+### Rule 1 — Tool Call 강제 (최우선)
+매 메시지 §B·§C hit ≥1 = **Skill tool `anthropic-skills:trigger-skill` 명시 호출** 강제. command-message 풀로드 상태 = "이미 발동" 자기합리화 ✗. 출력 silent(Rule 2)는 **응답 본문 silent**일 뿐 **Skill tool 호출 silent ✗**. 컨텍스트 박스에 `anthropic-skills:trigger-skill` 흔적 가시적으로 남아야 발동 인정. 미호출 = 발동 무효·응답 폐기. **이 룰이 §A 첫 번째인 이유: 호출 자체가 발동의 본체이며, Silent·Verbatim·컨펌게이트는 호출 후 처리되는 후속 룰.**
 
-### Rule 2 — Verbatim
+### Rule 2 — Silent
+헤더·박스·자기선언 출력 ✗. 본문 1줄 자연 융합. "트리거 발동 — ..." 같은 메타 선언 ✗. 단 Rule 1 Skill tool 호출은 silent 대상 아님 — 반드시 가시적으로 호출.
+
+### Rule 3 — Verbatim
 응답에 §B 정의 키워드 ≥ 2개 verbatim 포함. "즉석·일반·대충" 일반추론 표현 ✗. lazy Read 의존 ✗ — 본문 §B가 정의 본체.
 
-### Rule 3 — 컨펌게이트 우선권
+### Rule 4 — 컨펌게이트 우선권
 핑퐁·리허설·작업계획 hit = 본실행(편집·생성·적용·INIT) 전 5단계 출력 → 컨펌 대기. "완성형 입력이라 OK"·"명령형 동사 우선" 자기합리화 = FAIL.
-
-### Rule 4 — Tool Call 강제
-매 메시지 §B·§C hit ≥1 = **Skill tool `anthropic-skills:trigger-skill` 명시 호출** 강제. command-message 풀로드 상태 = "이미 발동" 자기합리화 ✗. 출력 silent(Rule 1)는 **응답 본문 silent**일 뿐 **Skill tool 호출 silent ✗**. 컨텍스트 박스에 `anthropic-skills:trigger-skill` 흔적 박혀야 발동 인정. 미호출 = 발동 무효·응답 폐기.
 
 ---
 
@@ -94,7 +96,7 @@ Shrink(인지적 부담 축소, 기능 축소 ✗ '느낌'을 줄임) → Hide(�
 ①목표 선언 ②입력 팩터 수집 ③목표 기준 MECE 너비확장 ④수평적 복수 엄브렐러 청킹·명명 ⑤각 엄브렐러 하위 드릴다운 위임. 너비확장 ✓ 깊이확장 ✗.
 
 ### 20. 틀밖
-①프레임 식별 ②프레임 박제 후 거부 ③3대 킬샷(이걸 안 하는 것 / 대상·구조·방식 자체 변경 / 아무도 안 묻는 질문) ④프레임 밖 답 없으면 종료문: "프레임 안 유효 — 현 프레임 내 최선책으로 회귀" 명시 후 종료.
+①프레임 식별 ②프레임 고정 후 거부 ③3대 킬샷(이걸 안 하는 것 / 대상·구조·방식 자체 변경 / 아무도 안 묻는 질문) ④프레임 밖 답 없으면 종료문: "프레임 안 유효 — 현 프레임 내 최선책으로 회귀" 명시 후 종료.
 
 ### 21. 부작업
 주작업 스냅샷 저장(목표·진행·다음) → TodoList 보존 → 부작업 진입.
@@ -112,7 +114,7 @@ Shrink(인지적 부담 축소, 기능 축소 ✗ '느낌'을 줄임) → Hide(�
 이해 충돌·다자 의사결정 감지 시 발동. 당사자 N명 × 이익 × 반대 × 레버리지 4열 표 강제. 협상스킬·관리스킬 풀엔진과 차이: 이해당사자맵=경량 표 1장, 풀엔진=세션 단위. 당사자 ≥3명 권장.
 
 ### 26. 신뢰구간
-예측·재무·전망 수치 출력 시 자동 발동. 단일 수치 보고 금지. low / base / high 3개 범위 + 핵심 가정 1줄 박제 강제. 수치 옆 [low–high] 범위 표기. 베이지안과 차이: 신뢰구간=표현 트리거(범위), 베이지안=갱신 트리거(확률).
+예측·재무·전망 수치 출력 시 자동 발동. 단일 수치 보고 금지. low / base / high 3개 범위 + 핵심 가정 1줄 명시 강제. 수치 옆 [low–high] 범위 표기. 베이지안과 차이: 신뢰구간=표현 트리거(범위), 베이지안=갱신 트리거(확률).
 
 ### 27. 작업설계자
 대화 맥락 기반 목표 재구성 + 실행 계획 설계. 7단계 출력 후 멈추고 승인 대기. 출력 끝에 "형이 결정해야 할 포인트 1~2개" highlight 강제. 풀버전 = `references/protocol-designer.md`.
@@ -139,6 +141,8 @@ Shrink(인지적 부담 축소, 기능 축소 ✗ '느낌'을 줄임) → Hide(�
 **문맥 10:** 적용·해줘·봐줘·발동해·식으로·관점·으로 봐·답게 봐·처럼 풀어·기반으로
 
 **명시 호출** = "X 발동·X해줘·X로 봐줘·X 적용" → 즉시 강제발동·본문 진입 ✗.
+
+> **메타 10의 "박제"**는 *형 메시지에서 검출하는 hit 키워드*일 뿐, Claude 응답에 *생성하는 어휘*가 아님. 응답 어휘로는 "고정·명시·확정·새김" 사용.
 
 ---
 
@@ -169,20 +173,24 @@ Shrink(인지적 부담 축소, 기능 축소 ✗ '느낌'을 줄임) → Hide(�
 | "오컴이라는 사람이..." | ❌ NOT | 인명 컨텍스트 |
 | "줌 미팅 잡아" | ❌ NOT | 일반명사 컨텍스트 |
 | "트리거 발동해줘" (정식명 미동반) | ❌ NOT | 일반명사 단독 |
+| "본문 풀로드 = 이미 발동이니 호출 스킵" | ❌ FAIL | Rule 1 위반·응답 폐기 |
+| 정식명 hit 후 컨텍스트 박스에 호출 흔적 0 | ❌ FAIL | 위장 발동·재진입 |
 
 ---
 
 ## §F. Pre/Post Gate (송출 직전 자체점검)
 
-**Pre-Output (첫 토큰 전):**
-1. 매 메시지 §B·§C grep 실행했나?
-2. hit 토큰 있었나?
-3. hit 시 §B 정의 키워드 ≥2개 verbatim 융합했나?
-4. hit 시 Skill tool `anthropic-skills:trigger-skill` 명시 호출했나? (command-message 풀로드 = 발동 ✗)
-4 NO 중 1개+ = 응답 폐기·재진입.
+**Pre-Output (첫 토큰 전, 순서 의무):**
+1. **hit 시 Skill tool `anthropic-skills:trigger-skill` 명시 호출했나?** (command-message 풀로드 = 발동 ✗ — Rule 1 최우선 체크)
+2. 매 메시지 §B·§C grep 실행했나?
+3. hit 토큰 있었나?
+4. hit 시 §B 정의 키워드 ≥2개 verbatim 융합했나?
+
+**1번이 NO = 즉시 응답 폐기·Skill tool 호출 후 재진입.** 2~4번은 호출 후 처리.
 
 **Post-Output (송출 직전):**
-형 메시지 재grep → hit 토큰의 §B 정의 키워드 응답에 verbatim ≥2회 등장? NO = FAIL·재생성.
+- 컨텍스트 박스에 `anthropic-skills:trigger-skill` 호출 흔적 가시? NO = FAIL·재생성.
+- 형 메시지 재grep → hit 토큰의 §B 정의 키워드 응답에 verbatim ≥2회 등장? NO = FAIL·재생성.
 
 **컨펌게이트 체크 (별도):**
 핑퐁·리허설·작업계획 hit인데 본실행 시작? YES → 응답 폐기·5단계로 복귀.
@@ -203,28 +211,32 @@ Shrink(인지적 부담 축소, 기능 축소 ✗ '느낌'을 줄임) → Hide(�
 | 함정 | 대응 |
 |------|------|
 | **lazy Read 환상** | Cowork에선 references/*.md 자동 로드 ✗. glossary 폐기·본문 §B가 유일한 정의 본체 |
-| **호출됐는데 silent 위반** | Rule 1 = 헤더·박스 출력 ✗. 본문 1줄 자연 융합 |
-| **정의 일반추론 (§B 우회)** | Rule 2 = §B 정의 키워드 ≥2개 verbatim 인용 |
-| **컨펌게이트 hit인데 INIT 직행** | Rule 3 = 핑퐁·리허설·작업계획 5단계 먼저 |
+| **호출됐는데 silent 위반** | Rule 2 = 헤더·박스 출력 ✗. 본문 1줄 자연 융합 |
+| **정의 일반추론 (§B 우회)** | Rule 3 = §B 정의 키워드 ≥2개 verbatim 인용 |
+| **컨펌게이트 hit인데 INIT 직행** | Rule 4 = 핑퐁·리허설·작업계획 5단계 먼저 |
 | **NOT 라우팅 무시** | TRIZ·이쁘니는 라우팅. 본 스킬 §B 적용 ✗ |
 | **인명·일반명사 오탐** | §D NOT 컨텍스트 1단어 검사 |
 | **Pre/Post Gate 스킵** | §F 자체점검 미실행 = 응답 폐기 사유 |
 | **자연발화 패턴 누수** | 35패턴(조사15+메타10+문맥10) 광범위 grep. "이라는·라는·뭐야·있어"까지 흡수 |
-| **command-message 풀로드 = 발동 착각** | SKILL.md 본문이 컨텍스트에 풀로드된 상태 ≠ 발동. Rule 4 = Skill tool 명시 호출이 발동 본체. 컨텍스트 박스 흔적 = 직접 증거 |
-| **출력 silent를 호출 silent로 곡해** | Rule 1 Silent = 응답 본문 헤더·박스 출력 ✗ 의미. Skill tool 호출 자체는 silent ✗·반드시 가시적으로 호출 |
+| **command-message 풀로드 = 발동 착각 (최대 함정)** | SKILL.md 본문이 컨텍스트에 풀로드된 상태 ≠ 발동. Rule 1 = Skill tool 명시 호출이 발동 본체. 컨텍스트 박스 가시적 흔적 = 직접 증거. 본문 자가검열 첫 문장 매 응답 의무 자문 |
+| **출력 silent를 호출 silent로 곡해** | Rule 2 Silent = 응답 본문 헤더·박스 출력 ✗ 의미. Skill tool 호출 자체는 silent ✗·반드시 가시적으로 호출 |
+| **Rule 1 후순위 곡해 ("나중에 호출하지 뭐")** | Rule 1 §A 첫 번째 = 최우선. Pre-Output 1번 = 첫 체크. 응답 첫 토큰 전 호출 완료 의무 |
 
 ---
 
 ## §H. 헤리티지
 
-- **v1.0 (~2026-04)** — 풀로드 (~1700토큰·발동률 ~99%) ← 본 v5.0 회귀 기준
+- **v1.0 (~2026-04)** — 풀로드 (~1700토큰·발동률 ~99%) ← 본 v5.x 회귀 기준
 - v2.0 Flash inline (2026-04 중순) — UP grep + inline 사전
 - v2.1 Flash-Router (2026-04-28) — args 라우팅 lazy-load (~250토큰·발동률 퇴화)
-- v2.2 Vector-Sharp (2026-05-01) — 정식명 30 박제 (~80토큰·발동률 ~70%)
+- v2.2 Vector-Sharp (2026-05-01) — 정식명 30 명시 (~80토큰·발동률 ~70%)
 - v3.0/v4.0 (설계만) — Self-Fire·5중 락 — 여전히 lazy Read 가정·Cowork 부적합
 - v5.0 Inline-Full (2026-05-05) — 정식명 30 verbatim 본문 풀로드·자연발화 35패턴 광범위·lazy Read 폐기·v1.0 발동률 99% 회귀.
-- **v5.1 Tool-Call-Forced (2026-05-05)** — Rule 4 신설. Skill tool 명시 호출 강제·command-message 풀로드 = 발동 ✗ 박제. §F Pre-Output 4번 추가·Gotchas 2행 추가.
+- v5.1 Tool-Call-Forced (2026-05-05) — Rule 4 신설. Skill tool 명시 호출 강제·command-message 풀로드 = 발동 ✗ 명시. §F Pre-Output 4번 추가·Gotchas 2행 추가.
+- **v5.2 Self-Verify-Hardened (2026-05-05)** — Rule 4 → Rule 1 승격(최우선). Pre-Output 4번 → 1번 승격. 본문 첫 줄 자가검열 한 문장 신설("본문 풀로드 ≠ 발동, 호출 흔적이 발동 본체"). Gotchas 1행 추가(Rule 1 후순위 곡해). §E WRONG 2행 추가. "박제" 동사 어휘 응답 누출 차단(본문 5개소 대체, P2·메타10 검출 키워드는 유지).
 
-**v5.0 변이 동기:** 형 피드백 — "lazy load Cowork에서 안 됨. 인라인 한페이지 풀로드 + 자연발화 패턴이 발동률 최고였음." → 정식명 30 verbatim 본문 박제·자연발화 35패턴 광범위 흡수·v1.0 회귀.
+**v5.0 변이 동기:** 형 피드백 — "lazy load Cowork에서 안 됨. 인라인 한페이지 풀로드 + 자연발화 패턴이 발동률 최고였음." → 정식명 30 verbatim 본문 풀로드·자연발화 35패턴 광범위 흡수·v1.0 회귀.
 
 **v5.1 변이 동기:** v5.0 풀로드 후에도 Claude가 Skill tool 호출 ✗·기억만으로 위장 발동. 형 적발 — "컨택스트에 발동 흔적이 없잖아". 원인 = Rule 1 Silent 곡해(출력 silent → 호출 silent). 처방 = Rule 4 Tool Call 강제·§F 4번 체크·Gotchas 2행. 발동 본체를 응답 텍스트에서 Skill tool 호출 흔적으로 이동.
+
+**v5.2 변이 동기:** v5.1 Rule 4·Pre-Output 4번이 후순위라 "나중에 처리하지 뭐" 곡해 → 호출 스킵 재발 가능. 형 결정 — Gotcha 추가는 사후 변명, Rule 4를 §A 1번으로 승격·Pre-Output 1번으로 승격·본문 첫 줄에 자가검열 한 문장 새김. 위치=본질 일치 원칙. 동시에 "박제" 동사 응답 누출(형 적발) 차단 — 본문 동사 5개소 대체. 검출용 P2·메타10의 "박제"는 형이 발화에 쓰는 단어라 유지.
