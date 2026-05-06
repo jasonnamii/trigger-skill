@@ -1,10 +1,10 @@
 ---
 name: trigger-skill
-description: 트리거 스킬 v5.5 Hub-Spoke Corpus-Loaded. 점 트리거(Rule 0)·메타틀밖(§B 31)이 결정론 본체. SKILL.md 다이어트로 정식명 31 풀정의·자연발화 해석을 references 분리. 매 메시지 §B·§C grep 1회 강제·hit≥1=즉시 Skill tool `anthropic-skills:trigger-skill` 명시 호출+§B 정의 verbatim 1줄 융합. 정식명+점=Rule 0 즉시 강제발동·grep 우회·NOT 우회. 메타틀밖 hit=VAULT/_jason_corpus 1회 Read·외부 처방 ≥1개 강제. 핑퐁·리허설·작업계획=점이어도 컨펌게이트 그대로. P1 트리거발동, 트리거스킬, hard-fire-dot, 점트리거, 메타틀밖, 외부처방, 정교화차단, 코퍼스, jason코퍼스, 강제발동, 자연발화, 자가검열, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 수정4, 복기, 이해당사자맵, 신뢰구간, 작업설계자, 핑퐁, 리허설, 작업계획. P2 발동해줘, 봐줘, 적용해, 식으로, 답게, 처럼, 관점으로, 이라는, 라는, 뭐야, 박제, 강구해, 더 잘, 어떻게 더. P3 trigger detection, hard-fire dot, meta-frame-out, jason corpus. P5 silent·verbatim 1줄 융합·컨펌게이트 차단. NOT TRIZ→triz / 이쁘니→design-skill / 점없는 단독→일반명사 / 인명→마스킹.
+description: 트리거 스킬 v5.6 Dry-Run-Confirm-Gate. 점 트리거(Rule 0)·메타틀밖(§B 31)이 결정론 본체. 핑퐁·리허설·작업계획 = dry-run 실측 후 컨펌(머릿속 시뮬 ✗·실제 산출물 생성 ○). SKILL.md 다이어트로 정식명 31 풀정의·자연발화 해석을 references 분리. 매 메시지 §B·§C grep 1회 강제·hit≥1=즉시 Skill tool `anthropic-skills:trigger-skill` 명시 호출+§B 정의 verbatim 1줄 융합. 정식명+점=Rule 0 즉시 강제발동·grep 우회·NOT 우회. 메타틀밖 hit=VAULT/_jason_corpus 1회 Read·외부 처방 ≥1개 강제. 핑퐁·리허설·작업계획=점이어도 컨펌게이트 그대로. P1 트리거발동, 트리거스킬, hard-fire-dot, 점트리거, 메타틀밖, dry-run, 드라이런, 실측컨펌, 외부처방, 정교화차단, 코퍼스, jason코퍼스, 강제발동, 자연발화, 자가검열, 홈즈, 오컴, 제1원리, 베이지안, 엄브렐러, 아날로지, 연역수렴, 외과적, 백본, 스켈레톤, SHE, 엘베피치, 타임스톤, 맥가이버, 넛지, 프리모르템, 트리아지, 줌, 절대자, 틀밖, 부작업, 주작업, 수정4, 복기, 이해당사자맵, 신뢰구간, 작업설계자, 핑퐁, 리허설, 작업계획. P2 발동해줘, 봐줘, 적용해, 식으로, 답게, 처럼, 관점으로, 이라는, 라는, 뭐야, 박제, 강구해, 더 잘, 어떻게 더. P3 trigger detection, hard-fire dot, meta-frame-out, jason corpus. P5 silent·verbatim 1줄 융합·컨펌게이트 차단. NOT TRIZ→triz / 이쁘니→design-skill / 점없는 단독→일반명사 / 인명→마스킹.
 license: Proprietary
 ---
 
-# 트리거 스킬 v5.5 Hub-Spoke Corpus-Loaded
+# 트리거 스킬 v5.6 Dry-Run-Confirm-Gate
 
 > **자가검열 첫 문장 (모든 응답 직전 의무 자문):** ① 형 메시지에 정식명+점(예: `홈즈.`) 있나 → Rule 0 즉시 강제발동·grep 우회. ② Skill tool `anthropic-skills:trigger-skill` 호출 흔적이 컨텍스트 박스에 가시적이어야 발동 인정. 본문만 기억하고 호출 안 하면 = 위장 발동 = 응답 폐기.
 
@@ -46,8 +46,10 @@ license: Proprietary
 ### Rule 3 — Verbatim
 응답에 §B 정의 키워드 ≥2개 verbatim 포함. 풀정의 필요 시 `references/glossary.md` lazy Read.
 
-### Rule 4 — 컨펌게이트 우선권
-핑퐁·리허설·작업계획 hit = 본실행(편집·생성·적용·INIT) 전 5단계 출력 → 컨펌 대기. "완성형 입력이라 OK" 자기합리화 = FAIL.
+### Rule 4 — 컨펌게이트 우선권 (dry-run 실측 강제)
+핑퐁·리허설·작업계획 hit = 본실행(편집·생성·적용·INIT·송출) 전 5단계 출력 → 컨펌 대기. "완성형 입력이라 OK" 자기합리화 = FAIL.
+
+**핵심: 머릿속 시뮬·계획만으로 5단계 채우기 = FAIL.** dry-run 실측 후 컨펌이 본질. 임시 산출물(샌드박스·temp 파일·미적용 diff·미송출 답변 초안)까지 *실제로* 실행해 그 결과물을 컨펌 대상으로 제출. 파괴적 작업(파일 덮어쓰기·삭제·외부 발송·git push)은 컨펌 후 적용. dry-run 결과 = 형이 실물 보고 OK/수정 결정.
 
 ---
 
@@ -84,9 +86,9 @@ license: Proprietary
 | 25 | 이해당사자맵 | 다자 의사결정 감지. 당사자N×이익×반대×레버리지 4열 표 |
 | 26 | 신뢰구간 | 예측·재무 수치 출력 시 자동. low/base/high 3범위+핵심가정 |
 | 27 | 작업설계자 | 대화 맥락 기반 목표 재구성+7단계 계획. 풀=`references/protocol-designer.md` |
-| 28 | 핑퐁 | [컨펌게이트] ①대화지속 선언 ②질문대기 ③답변만 ④컨펌 후 다음 |
-| 29 | 리허설 | [컨펌게이트] ①의견수집 ②dry-run 미리보기 ③변경점 highlight ④컨펌 |
-| 30 | 작업계획 | [컨펌게이트] ①Before/After ②갭 ③타임라인 ④반영계획 ⑤컨펌 |
+| 28 | 핑퐁 | [컨펌게이트·dry-run] ①대화지속 선언 ②실제 답변 1턴 dry-run 작성 ③그 답변을 컨펌 대상으로 제출 ④컨펌 후 송출 |
+| 29 | 리허설 | [컨펌게이트·dry-run] ①의견수집 ②실제 변경 적용한 산출물 생성(파일·diff·결과물) ③변경점 highlight ④컨펌 후 본적용 |
+| 30 | 작업계획 | [컨펌게이트·dry-run] ①dry-run 실행해 실측 Before/After 산출 ②실측 갭 ③실측 타임라인 ④반영계획 ⑤컨펌 후 본실행 |
 | 31 | 메타틀밖 | Claude 자신의 시스템 개선 작업 시 자가감지·내부정교화 차단·외부 처방 ≥1개 강제. 풀정의 아래 §B-31 |
 
 ### §B-31 메타틀밖 풀정의 (본문 유지·결정론 본체)
@@ -164,6 +166,9 @@ Claude 자신이 시스템 개선·룰 신설·구조 설계 작업 진입 시 �
 | "TRIZ 적용해줘" | ❌ NOT | triz-skill 라우팅 |
 | "오컴이라는 사람이..." | ❌ NOT | 인명 컨텍스트 |
 | "줌 미팅 잡아" | ❌ NOT | 일반명사 컨텍스트 |
+| "작업계획." 받고 추측으로 5단계 채움 (dry-run 미실행) | ❌ FAIL | Rule 4 위반·실측 산출물 부재 |
+| "리허설." 받고 "이렇게 바꿀 예정" 글로만 설명 (산출물 ✗) | ❌ FAIL | Rule 4 위반·실제 변경 적용 안 함 |
+| "핑퐁." 받고 답변 미리보기 없이 "이런 방향으로 답할게요" | ❌ FAIL | Rule 4 위반·실제 답변 1턴 dry-run 부재 |
 | 정식명 hit 후 호출 흔적 0 | ❌ FAIL | 위장 발동·재진입 |
 
 ---
@@ -229,6 +234,9 @@ Claude 자신이 시스템 개선·룰 신설·구조 설계 작업 진입 시 �
 - v5.2 Self-Verify-Hardened — Rule 1 승격·자가검열 첫 줄
 - v5.3 Hard-Fire-Dot — Rule 0 신설(정식명+점=강제발동)
 - v5.4 Meta-Frame-Out — §B 31 메타틀밖 신설
-- **v5.5 Hub-Spoke Corpus-Loaded (2026-05-05)** — SKILL.md 다이어트(24KB→~10KB). §B 풀정의→`references/glossary.md`, §C 해석→`references/utterance-patterns.md` 분리. 본문은 결정론 본체(Rule 0·1·메타틀밖·§B 매니페스트·§D·§E·§F)만 인라인. 메타틀밖 ③-a 코퍼스 Read 단계 추가(VAULT/_jason_corpus). 본질 = 점 트리거·메타틀밖이 결정론이라 인라인 풀로드 보험 불필요·hit 시 lazy Read로 충분.
+- v5.5 Hub-Spoke Corpus-Loaded (2026-05-05) — SKILL.md 다이어트(24KB→~10KB). §B 풀정의→`references/glossary.md`, §C 해석→`references/utterance-patterns.md` 분리. 본문은 결정론 본체(Rule 0·1·메타틀밖·§B 매니페스트·§D·§E·§F)만 인라인. 메타틀밖 ③-a 코퍼스 Read 단계 추가(VAULT/_jason_corpus).
+- **v5.6 Dry-Run-Confirm-Gate (2026-05-06)** — Rule 4 본질 교정. 핑퐁·리허설·작업계획 = "머릿속 시뮬→5단계" 해석 차단. **dry-run 실측 후 컨펌**으로 명시화. §B 28·29·30 라벨 `[컨펌게이트]` → `[컨펌게이트·dry-run]`, 정의에 "실제 답변 1턴 dry-run·실제 변경 적용 산출물·실측 Before/After" verbatim 박제. §E WRONG 3행 추가(추측 5단계·예정 글·미리보기 답 없음 모두 FAIL). 임시 산출물(샌드박스·temp·미적용 diff·미송출 초안)까지 실행 → 결과물을 컨펌 대상으로 제출. 파괴적 작업은 컨펌 후 적용.
+
+**v5.6 변이 동기:** 형 진단 — "사전 계획·생각만으로 컨펌게이트 채우는 패턴" 발견. 본질은 *실측 산출 후 컨펌*인데 v5.5 정의("Before/After·미리보기")가 머릿속 시뮬로 해석 가능했음. dry-run 단어를 라벨·정의 양쪽에 verbatim 박제 → 해석 여지 차단. WRONG 케이스 3종으로 전형 실패 패턴 못박음. 본질 = "컨펌 = 실물 보고 결정"이지 "계획안 보고 결정"이 아님.
 
 **v5.5 변이 동기:** 형 결정 — "점 트리거 결정론 됐으니 인라인 다이어트·허브스포크 가능". 진단 합치: v5.0~v5.4 인라인 풀로드는 lazy Read 미보장에 대한 보험. Rule 0(점)이 결정적 진입 보장하므로 정식명 풀정의는 *모호 시에만* 필요 → references 분리해도 발동률 유지. 동시에 메타틀밖 ③-a 코퍼스 Read 추가로 형 발상 누적 자산화. 본질 = "결정론 진입 확보 → 본문은 그릇만, 살은 references". v2.x 축약 실패와 차이 = v2.x는 *결정론 없이* 축약(자연발화만 의존), v5.5는 *결정론 본체 보존하고* 살만 분리.
