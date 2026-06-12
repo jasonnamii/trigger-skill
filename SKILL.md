@@ -1,5 +1,6 @@
 ---
 name: trigger-skill
+version: 5.8
 description: |
   정식명 단독/나열=강제발동. 정식명+점=강제발동. 35정식명. Bare-Fire Extreme(Rule 0A)·점 트리거(Rule 0)·메타틀밖이 결정론 본체. 핑퐁·리허설·작업계획=dry-run 후 컨펌게이트. 트리거: 트리거발동, 트리거스킬, bare-fire, bare-fire-extreme, hard-fire-dot, 점트리거, 무점트리거, 메타틀밖, dry-run, 드라이런, 실측컨펌, 외부처방, 정교화차단, 코퍼스, jason코퍼스, 강제발동, 자연발화, 자가검열, 홈즈, 오컴, 제1원리. NOT: TRIZ→triz-skill / 이쁘니→apple-canvas / 점없는 단독·나열→강제발동(짧은 입력 한정).
 license: Proprietary
